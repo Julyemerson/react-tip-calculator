@@ -1,5 +1,7 @@
 # Tip React Calculator
 
+![Tip Calculator](/public/tip_calculator.png "Tip Calculator")
+
 This application is a simple tip calculator built with React and Vite. It allows users to calculate the tip amount based on the bill and the service rating.
 
 ## Main Components
@@ -18,3 +20,4 @@ To run the application, use the `dev` script in the [package.json](package.json)
 
 ```sh
 npm run dev
+```
