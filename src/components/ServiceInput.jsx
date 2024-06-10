@@ -1,13 +1,18 @@
-export default function ServiceInput() {
+export default function ServiceInput({ value, onSelect, label }) {
   return (
     <>
       <div className="tip-input">
-        <label htmlFor="service"> How did you like the service? </label>
-        <select name="service" id="service">
-          <option value="dissatisfied">Dissatisfied (0%)</option>
-          <option value="okay"> It was okay (5%)</option>
-          <option value="good">It was good (10%)</option>
-          <option value="amazing">Absolute amazing! (10%)</option>
+        <label htmlFor="service"> {label} </label>
+        <select
+          value={value}
+          onChange={(e) => onSelect(Number(e.target.value))}
+          name="service"
+          id="service"
+        >
+          <option value={0}>Dissatisfied (0%)</option>
+          <option value={5}> It was okay (5%)</option>
+          <option value={10}>It was good (10%)</option>
+          <option value={20}>Absolute amazing! (20%)</option>
         </select>
       </div>
     </>
